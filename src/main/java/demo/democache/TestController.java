@@ -55,7 +55,7 @@ public class TestController {
 	/**
 	 * clear the cache every "fixedRate" period
 	 */
-	@Scheduled(fixedRate = 6000)
+	@Scheduled(fixedRate = 60000)
 	public void evictAllcachesAtIntervals() {
 		System.out.println("schedule clear cache");
 	    evictAllCaches();
